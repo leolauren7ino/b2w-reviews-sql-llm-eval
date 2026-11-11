@@ -52,6 +52,6 @@ não recomenda): é sinal do dado, não erro a corrigir — ver Q6.
 
 Ordem de grandeza: centenas de vezes mais rápido (de ~380× a ~660× nesta medição). Planos completos em `EXPLAIN.md`.
 Ressalvas honestas: são milissegundos numa tabela pequena (a lição é o plano mudar de varredura total para
-índice, não o ganho absoluto); medi com uma execução de aquecimento e uma medida, num Postgres local;
+índice, não o ganho absoluto); medi com uma execução de aquecimento e uma medida, num Postgres 16 em Docker, dentro de um Codespaces (numa máquina local os tempos foram outros, mas o plano antes e depois do índice foi o mesmo);
 e o primeiro experimento foi refeito porque um subselect para escolher o cliente também usava o índice e
 distorcia a comparação, por isso o `reviewer_id` entra como literal.
