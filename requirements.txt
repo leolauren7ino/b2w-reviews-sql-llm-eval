@@ -1,0 +1,6 @@
+pandas>=3.0
+psycopg2-binary
+scikit-learn
+pydantic>=2
+anthropic
+pytest

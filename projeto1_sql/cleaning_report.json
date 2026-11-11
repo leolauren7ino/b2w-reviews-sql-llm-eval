@@ -1,0 +1,14 @@
+{
+  "linhas_brutas": 132373,
+  "texto_vazio_virou_null": 3275,
+  "marcas_distintas_antes_depois": [
+    1062,
+    1062
+  ],
+  "datas_invalidas_removidas": 0,
+  "ano_nascimento_implausivel_virou_null": 108,
+  "duplicatas_removidas": 1298,
+  "rating_vs_recomenda_incoerentes_mantidos": 4001,
+  "linhas_finais": 131075,
+  "linhas_no_postgres": 131075
+}
