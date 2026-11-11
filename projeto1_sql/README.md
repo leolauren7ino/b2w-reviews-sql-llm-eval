@@ -47,10 +47,10 @@ não recomenda): é sinal do dado, não erro a corrigir — ver Q6.
 ## Índice: `EXPLAIN (ANALYZE, BUFFERS)` antes e depois (131.075 linhas, cache quente)
 | Consulta | Plano antes | Tempo | Índice | Plano depois | Tempo |
 |---|---|---|---|---|---|
-| Histórico de um cliente (`reviewer_id = …`) | Seq Scan | 28,9 ms | `(reviewer_id, submitted_at)` | Bitmap Index Scan | 0,06 ms |
-| 20 últimas avaliações de um produto | Seq Scan | 23,0 ms | `(product_id, submitted_at DESC)` | Bitmap Index Scan | 0,14 ms |
+| Histórico de um cliente (`reviewer_id = …`) | Seq Scan | 22,4 ms | `(reviewer_id, submitted_at)` | Bitmap Index Scan | 0,03 ms |
+| 20 últimas avaliações de um produto | Seq Scan | 20,0 ms | `(product_id, submitted_at DESC)` | Bitmap Index Scan | 0,05 ms |
 
-Ordem de grandeza: ~200× mais rápido nos dois casos. Planos completos em `EXPLAIN.md`.
+Ordem de grandeza: centenas de vezes mais rápido (de ~380× a ~660× nesta medição). Planos completos em `EXPLAIN.md`.
 Ressalvas honestas: são milissegundos numa tabela pequena (a lição é o plano mudar de varredura total para
 índice, não o ganho absoluto); medi com uma execução de aquecimento e uma medida, num Postgres local;
 e o primeiro experimento foi refeito porque um subselect para escolher o cliente também usava o índice e
