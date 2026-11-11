@@ -11,8 +11,18 @@ Dataset comum: B2W-Reviews01 (baixado de `huggingface.co/datasets/vladjr/B2W-Rev
 **aguardando o gabarito manual e uma `ANTHROPIC_API_KEY`**; por isso não há métricas nele ainda.
 
 ## Ambiente
-Postgres 16 (os scripts leem `PGHOST/PGPORT/PGUSER/PGPASSWORD/PGDATABASE`; padrão: socket `/tmp`, porta 5433, banco `portfolio`).
+Python 3.12+ e Postgres 16. O jeito mais simples é Docker:
+
 ```bash
+docker run -d --name pg -e POSTGRES_PASSWORD=dev -p 5432:5432 postgres:16
+until docker exec pg pg_isready -U postgres; do sleep 1; done
+docker exec pg psql -U postgres -c "CREATE DATABASE portfolio;"
+
+export PGHOST=localhost PGPORT=5432 PGUSER=postgres PGPASSWORD=dev PGDATABASE=portfolio
 pip install -r requirements.txt
-mkdir -p data/raw && curl -L -o data/raw/b2w.csv https://huggingface.co/datasets/vladjr/B2W-Reviews01/resolve/main/B2W-Reviews01.csv
+mkdir -p data/raw
+curl -L -o data/raw/b2w.csv https://huggingface.co/datasets/vladjr/B2W-Reviews01/resolve/main/B2W-Reviews01.csv
+python projeto1_sql/clean_and_load.py
 ```
+
+Os scripts leem `PGHOST/PGPORT/PGUSER/PGPASSWORD/PGDATABASE`; sem elas, o padrão é socket `/tmp`, porta 5433 e banco `portfolio`. No PowerShell, use `curl.exe` e `$env:PGHOST="localhost"` etc.
