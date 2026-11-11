@@ -28,6 +28,24 @@ Divisão fixa (seed 42), estratificada por sentimento: **100 dev** (para ajustar
 - Observação técnica: os modelos atuais da API não aceitam `temperature`; a variação entre execuções
   é a do amostrador padrão. Usei `effort: low`, adequado a classificação.
 
+## Provedor de LLM
+O `llm.py` usa o formato do SDK da Anthropic. Para trocar de provedor sem mexer nele, o `compat_client.py`
+adapta qualquer endpoint compatível com a API da OpenAI (Gemini, Ollama etc.), e o `run_eval.py` escolhe o
+cliente pela variável `LLM_PROVIDER` (padrão: Anthropic).
+
+Gemini, no plano gratuito do Google AI Studio:
+```bash
+export LLM_PROVIDER=gemini LLM_API_KEY=... LLM_MIN_INTERVAL=7
+export LLM_BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai/
+python run_eval.py --prompt v1 --split dev --runs 3 --model gemini-3.5-flash-lite --workers 1
+```
+
+- `LLM_MIN_INTERVAL` espaça as chamadas para não estourar o limite por minuto: um erro 429 contaria como
+  resposta inválida e distorceria a acurácia. Por isso a latência registrada **inclui essa espera** e não
+  deve ser lida como latência do modelo.
+- Use sempre um nome de modelo versionado (não um apelido `-latest`) e registre-o junto das métricas.
+- O parâmetro `effort` é específico da Anthropic e é ignorado nos outros provedores.
+
 ## Resultados
 ⟦Tabela: acurácia, precisão, recall e F1 por classe — v1 no dev — colar de `reports/v1_dev.md`⟧
 

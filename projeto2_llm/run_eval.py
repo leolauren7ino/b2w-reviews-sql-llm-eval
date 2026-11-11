@@ -8,7 +8,7 @@ cada olhada no teste enquanto se ajusta o prompt o transforma em dev.
 """
 import argparse, logging, sys
 from concurrent.futures import ThreadPoolExecutor
-import anthropic
+from compat_client import make_client
 from common_path import setup  # noqa: F401  (ajusta sys.path)
 from common.db import connect
 from llm import classify, DEFAULT_MODEL
@@ -38,7 +38,7 @@ def main():
         items = cur.fetchall()
         if not items:
             sys.exit("Sem gabarito carregado: rode prepare_sample.py, rotule, depois split.py.")
-        client = anthropic.Anthropic()
+        client = make_client()
         system = PROMPTS[a.prompt]
         for run_idx in range(a.runs):
             cur.execute("INSERT INTO runs (prompt_version, model, split, run_idx) VALUES (%s,%s,%s,%s) RETURNING run_id",
