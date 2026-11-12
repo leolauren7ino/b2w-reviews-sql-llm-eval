@@ -1,9 +1,7 @@
 # Projeto 2 — Classificador de avaliações com LLM e avaliação honesta
 
-> **Estado deste README: resultados pendentes.** O pipeline está construído e testado e o gabarito
-> de 200 avaliações existe, mas **os números da avaliação ainda não foram publicados aqui**. Os
-> trechos marcados com `⟦…⟧` devem ser preenchidos com a saída de `report.py`, não com estimativas.
-> Um README com números inventados é o oposto do que este projeto quer provar.
+> **Estado:** pipeline executado de ponta a ponta (dev e teste, prompt v1, Gemini no plano gratuito).
+> O gabarito foi rotulado por Claude (Anthropic), não por humano: veja "Limitações".
 
 ## A pergunta
 Dá para confiar num LLM para classificar avaliações em português por **sentimento** e **tema**?
@@ -11,17 +9,13 @@ Quanto, onde ele erra, e o quanto o resultado muda de uma execução para outra?
 
 ## Dados
 B2W-Reviews01 (avaliações reais do e-commerce brasileiro, ~132 mil linhas), já limpo no Projeto 1.
-Gabarito: **200 avaliações rotuladas às cegas quanto à nota em estrelas** (40 por estrela, então a
-distribuição *não* é a natural — as métricas valem para este conjunto). **Quem rotulou:** as linhas 1 a 3
-foram decididas por mim; as linhas 4 a 200 foram rotuladas com a ajuda do Claude, seguindo o
-`labeling/GUIA_DE_ROTULAGEM.md`, com notas de hesitação na coluna `nota`. Portanto, a acurácia deste
-projeto mede a **concordância do modelo avaliado com um gabarito gerado por outro LLM**, e não com um
-gabarito 100% humano. A verificação humana do gabarito está descrita em "Limitações".
+Gabarito: **200 avaliações rotuladas por Claude (Anthropic), sem acesso à nota em estrelas** (40 por estrela,
+então a distribuição *não* é a natural — as métricas valem para este conjunto).
 Divisão fixa (seed 42), estratificada por sentimento: **100 dev** (para ajustar o prompt) e
 **100 test** (usado uma única vez por versão final de prompt; o código recusa uma segunda).
 
 ## Pipeline
-`prepare_sample.py` → *(rotulagem do gabarito)* → `split.py` → `run_eval.py` → `report.py`
+`prepare_sample.py` → *(rotulagem por Claude)* → `split.py` → `run_eval.py` → `report.py`
 
 - Saída do modelo em JSON, validada com pydantic (`schema.py`, sem campos extras, valores só da taxonomia).
 - `llm.py` trata JSON quebrado/envolto em prosa, valores fora da taxonomia, `refusal`/`max_tokens` e erros
@@ -51,29 +45,69 @@ python run_eval.py --prompt v1 --split dev --runs 3 --model gemini-3.5-flash-lit
 - O parâmetro `effort` é específico da Anthropic e é ignorado nos outros provedores.
 
 ## Resultados
-⟦Tabela: acurácia, precisão, recall e F1 por classe — v1 no dev — colar de `reports/v1_dev.md`⟧
+Modelo `gemini-3.5-flash-lite` (plano gratuito), prompt `v1`, 2 execuções por conjunto.
+O prompt não foi alterado entre dev e teste.
 
-**Consistência entre execuções** (mesmo prompt, 3 execuções): ⟦X de 100 itens mudaram de rótulo⟧.
-⟦Mostrar 2–3 exemplos reais de item instável com os textos.⟧
+| | dev | teste |
+|---|---|---|
+| Acurácia, sentimento | 0,93 e 0,95 | 0,95 e 0,96 |
+| Acurácia, tema | 0,83 e 0,83 | 0,83 e 0,83 |
+| Itens que mudaram entre execuções (sentimento / tema) | 2 / 4 de 100 | 3 / 7 de 100 |
+| Respostas inválidas | 0 de 200 | 0 de 200 |
+
+Métricas por classe no teste (execuções agregadas; `support` conta item × execução, então são 2 por item):
+
+**Sentimento**
+
+| classe | precision | recall | f1 | support |
+|---|---|---|---|---|
+| positivo | 0,969 | 1,000 | 0,984 | 94 |
+| neutro | 0,857 | 0,429 | 0,571 | 14 |
+| negativo | 0,948 | 0,989 | 0,968 | 92 |
+
+**Tema**
+
+| classe | precision | recall | f1 | support |
+|---|---|---|---|---|
+| entrega | 0,871 | 0,964 | 0,915 | 28 |
+| qualidade_produto | 0,949 | 0,867 | 0,906 | 128 |
+| preco | 0,333 | 1,000 | 0,500 | 4 |
+| atendimento | 0,077 | 0,250 | 0,118 | 4 |
+| anuncio_divergente | 0,846 | 0,846 | 0,846 | 26 |
+| outro | 1,000 | 0,100 | 0,182 | 10 |
+
+Leitura: positivo e negativo são sólidos. `neutro` (7 itens no teste) e as classes de tema com
+2 a 5 itens (preco, atendimento, outro) não sustentam conclusão. A latência registrada inclui a
+espera de 7 s entre chamadas e não é a do modelo.
 
 ## Análise de erros
-Li os ⟦N⟧ erros um a um (`reports/v1_dev_erros.csv`, coluna `causa`):
+Os 25 erros do dev (`reports/v1_dev_erros.csv`) foram lidos e classificados. A classificação foi
+feita por Claude, o mesmo que rotulou o gabarito, e deve ser conferida pelo autor.
+Em 24 dos 25 erros, o rótulo tinha nota de hesitação registrada antes da avaliação
+(hesitação em 55% das 200 avaliações).
 
 | Causa | Itens | Exemplo real |
 |---|---|---|
-| Ambiguidade genuína | ⟦⟧ | ⟦texto⟧ |
-| Viés/limitação do modelo | ⟦⟧ | ⟦texto⟧ |
-| **Meu rótulo estava errado** | ⟦⟧ | ⟦texto⟧ |
-| Instrução ruim no prompt | ⟦⟧ | ⟦texto⟧ |
+| Ambiguidade genuína (texto com dois assuntos, ou fronteira do neutro) | 23 | "Produto chegou antes do tempo previsto, embalagem perfeita e produto de ótima qualidade." Rotulado qualidade, previsto entrega |
+| Viés/limitação do modelo | 1 | "Produto chegou com defeito tive que pedir troca mandei de volta..." Rotulado entrega, previsto atendimento (a confirmar) |
+| Rótulo do gabarito errado | 1 | "Achei o produto bonito quando vir na foto quando chegou era deferente da foto mais td bem fez a devolução..." Rotulado negativo, previsto neutro em uma execução |
+| Instrução ruim no prompt | 0 | O prompt não traz regra de desempate para textos com vários assuntos; não foi alterado |
+
+Os 24 itens com erro do teste não foram analisados, porque o prompt já estava congelado.
 
 ## O que mudei no prompt e o efeito
-Ver `prompts/CHANGELOG.md`. ⟦v1 → v2: o que mudou, por quê (qual erro), efeito no **dev**.⟧
-Teste final (uma vez): ⟦números do test⟧. Diferença dev vs test: ⟦⟧ — ⟦se o dev subiu e o test não, o prompt foi ajustado ao dev.⟧
+Nada: o v1 foi mantido (ver `prompts/CHANGELOG.md`). Os erros do dev não mostraram um padrão que um
+prompt corrija; a minha própria regra de desempate entre temas não foi consistente, e uma v2
+estaria ajustando o prompt ao ruído do gabarito.
+Teste final (uma vez): sentimento 0,95 e 0,96; tema 0,83 e 0,83. Diferença dev vs teste: +0,02 em
+sentimento e 0,00 em tema, sem sinal de ajuste ao dev, já que o prompt não foi ajustado.
 
 ## Limitações
 - 200 exemplos: com 100 no teste, cada ponto percentual de acurácia é 1 item; diferenças de poucos pontos são ruído.
-- Gabarito gerado com ajuda de um LLM (Claude) em 197 dos 200 itens: o resultado mede concordância entre modelos, não acerto contra um gabarito humano. Verificação humana: ⟦N itens rotulados por mim às cegas, X% de concordância com o gabarito⟧.
-- A classe `neutro` tem só 13 exemplos (6 no dev e 7 no teste): as métricas dela quase não significam nada.
+- Gabarito rotulado por Claude e avaliado com outro LLM (Gemini): a concordância entre dois
+  modelos pode superestimar a concordância com humanos. As 3 primeiras avaliações foram decididas
+  pelo autor. Ainda não há re-rotulagem humana de uma amostra.
+- Classes pequenas no teste (neutro 7 itens, preco 2, atendimento 2, outro 5): métricas instáveis.
 - Distribuição estratificada por estrelas, não a natural.
 
 ## Como reproduzir
@@ -81,7 +115,7 @@ Teste final (uma vez): ⟦números do test⟧. Diferença dev vs test: ⟦⟧ �
 pip install -r ../requirements.txt
 export ANTHROPIC_API_KEY=...            # e PGHOST/PGPORT/PGUSER/PGDATABASE se não for o padrão
 python prepare_sample.py                # já gerado: labeling/to_label.csv
-# o gabarito já está preenchido em labeling/to_label.csv (ver "Dados" sobre quem rotulou)
+# rotule labeling/to_label.csv seguindo labeling/GUIA_DE_ROTULAGEM.md
 python split.py
 python run_eval.py --prompt v1 --split dev --runs 3
 python report.py --prompt v1 --split dev
