@@ -17,4 +17,23 @@
 17 -d hesitei com q: faltou instrucao e esta em ingles
 18 +q
 19 -e hesitei com a: produto bom, mas reclama da loja e da falta de posicao do pedido
-20 -e
+20 -e21 +e hesitei com q: elogia o pipoqueiro e a entrega adiantada
+22 -q
+23 +q
+24 +q texto humoristico/ironico, recomenda o motor; hesitei com 0
+25 0q hesitei com d: parece boa, manual em ingles, sem conclusao
+26 -q
+27 -q hesitei com p: gosta dos filmes, mas a qualidade do box nao vale o preco
+28 -q hesitei com d: esperava outra coisa pela marca, funcoes confusas
+29 +q
+30 +e hesitei com 0 e q: recomenda, unico problema citado e o prazo
+31 -e hesitei com a: pedido nao chega por briga entre fornecedora e loja
+32 -p
+33 -q
+34 -q hesitei com a: carregador nao funciona e ninguem retorna
+35 +q
+36 -e hesitei com 0: gosta da malha, mas a entrega de um mes domina o final
+37 +q hesitei com p: produto muito bom, comprou mais na oferta
+38 +q
+39 +e
+40 -d hesitei com q: cores erradas e baixa qualidade
