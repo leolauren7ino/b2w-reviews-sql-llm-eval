@@ -38,7 +38,6 @@
 38 +q
 39 +e
 40 -d hesitei com q
-
 41 -e hesitei com d
 42 +q hesitei com e
 43 -q hesitei com d
@@ -59,7 +58,6 @@
 58 +q ambiguo, li como elogio
 59 +q hesitei com e e p
 60 0q hesitei com +
-
 61 +q
 62 +q
 63 0o vendedor se defendendo, nao avalia compra
@@ -80,7 +78,6 @@
 78 +q hesitei com e
 79 +q
 80 0q hesitei com +
-
 81 -q hesitei com a
 82 -q
 83 -q
@@ -101,3 +98,23 @@
 98 -e
 99 -q hesitei com a: garantia
 100 -p hesitei com e e 0: frete caro, gostou do quadro
+101 -q
+102 -q hesitei com a
+103 +q
+104 +q hesitei com e
+105 +e hesitei com q
+106 +q hesitei com d
+107 -q
+108 -e hesitei com a e 0: produto bom, prazo e transportadora ruins
+109 +q hesitei com e
+110 +e
+111 +q hesitei com e
+112 -o sem motivo dado
+113 +q hesitei com e
+114 +q
+115 -d
+116 +q hesitei com 0: elogia, ressalva sem flash frontal
+117 0q hesitei com -: corte irregular, mas facil de usar
+118 -q hesitei com 0
+119 0o pergunta, hesitei com q
+120 -e

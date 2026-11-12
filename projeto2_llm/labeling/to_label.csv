@@ -99,26 +99,26 @@ review_id,review_text,sentimento,tema,nota
 68970,Ainda não chegou o produto Como é pedido para avaliar se não chegou?,negativo,entrega,
 89069,"O aparelho apresentou depois de dois de uso, espero que tenha sido um problema pontual, contudo ainda não consegui acionar a garantia.",negativo,qualidade_produto,hesitei com a: garantia
 32933,"O quadro é lindo,mas o frete é um absurdo,98,00 sudeste. Quase o preço do quadro.",negativo,preco,"hesitei com e e 0: frete caro, gostou do quadro"
-57499,Material muito fraco não serve nem para colocar roupa de bebê na comoda ela é muito fraquinha,,,
-88923,Comprei a uma semana e não esquenta Um lado é média temperatura e o outro baixa Quero trocar pra saber se é problema da marca ou do aparelho que veio pra mim. Com o proceder?,,,
-9919,"Carrega completamente o celular, várias vezes. Tem uma eficiência energética considerável é um desempenho excelente.",,,
-127914,"atendeu a expectativa, chegou rápido e bom acabamento",,,
-70549,"Chegou rapido, produto em perfeito estado. Recomendo!",,,
-106811,"Carro muito bem detalhado, não é muito pequeno como parecia na foto, estou muito satisfeito.",,,
-58994,"NÃO FUNCIONA, UMA PORCARIA..VAI PRO LIXO PORQUE NÃO QUERO BRIGAR POR CAUSA DESSA MIXARIA..",,,
-113219,"O produto é bom, mas os serviços das lojas americanas é uma droga! Não recomendo! Quando você compra o produto, dão um prazo de entrega, depois que você paga, o prazo fica um absurdo de estendido! Sem falar no lixo de transportadora! Comprem o produto em outra loja! Lojas americanas deixa super a desejar!!",,,
-48988,Excelente produto !!!!! Eu indico!!!! Entrega foi rápida e produto entregue perfeito.,,,
-80540,"Muito bom, os livros chegaram antes do prazo de entrega.",,,
-56836,"muito ,bom chego no prazo e excelente qualidade..recomendo",,,
-92778,NAO CONPRE EUE UUE EU EU EU EU EU UEN FALO N COMPRE NAO GASTE SEU DINHEIRO A TOA,,,
-21836,"Produto muito bom, leve e com ótima qualidade de imagem. Prazo de entrega conforme o prometido.",,,
-88291,"Multifuncional, deixa a barba como você quer, de uma forma muito fácil e prática. Mantém a carga por um bom tempo.",,,
-122174,"Não gostei, pois na foto há o porta travesseiros, qdo chegou vi q era só o edredom. Esta escrito na descrição, mas acho que se não tem porta travesseiro, então a foto deveria ser só do edredom.",,,
-118654,"Aparelho muito bom, mas não tem flash frontal. Não em atentei a isso no momento da compra, mas baixei um aplicativo",,,
-74868,As lâminas fatiadoras ficam um pouca afastadas da tampa então qdo as verduras e legumes chegam no final o corte é feito de forma irregular....Aconteceu o mesmo com o queijo... Ele é fácil de usar....isso é um ponto positivo....,,,
-40343,"Achei um pouco frágil, esperava que fosse mais resitente.",,,
-78196,"Bom dia, queria saber de quem tem esse modelo de maquina se ela deixa o cabelo da barba no zero bem lisinha ou ela so apara e fica um pouco alto.",,,
-54717,"Analisar algo que não recebi? Interessante. O produto não chegou, ele retornou para o remetente, sendo que no dia da dita entrega eu não sai de casa e passei o endereço correto, e não venham me culpar dizendo que formulei o endereço de maneira incorreta, sendo que comprei um outro produto anteriormente pelo site e ele foi entregue.",,,
+57499,Material muito fraco não serve nem para colocar roupa de bebê na comoda ela é muito fraquinha,negativo,qualidade_produto,
+88923,Comprei a uma semana e não esquenta Um lado é média temperatura e o outro baixa Quero trocar pra saber se é problema da marca ou do aparelho que veio pra mim. Com o proceder?,negativo,qualidade_produto,hesitei com a
+9919,"Carrega completamente o celular, várias vezes. Tem uma eficiência energética considerável é um desempenho excelente.",positivo,qualidade_produto,
+127914,"atendeu a expectativa, chegou rápido e bom acabamento",positivo,qualidade_produto,hesitei com e
+70549,"Chegou rapido, produto em perfeito estado. Recomendo!",positivo,entrega,hesitei com q
+106811,"Carro muito bem detalhado, não é muito pequeno como parecia na foto, estou muito satisfeito.",positivo,qualidade_produto,hesitei com d
+58994,"NÃO FUNCIONA, UMA PORCARIA..VAI PRO LIXO PORQUE NÃO QUERO BRIGAR POR CAUSA DESSA MIXARIA..",negativo,qualidade_produto,
+113219,"O produto é bom, mas os serviços das lojas americanas é uma droga! Não recomendo! Quando você compra o produto, dão um prazo de entrega, depois que você paga, o prazo fica um absurdo de estendido! Sem falar no lixo de transportadora! Comprem o produto em outra loja! Lojas americanas deixa super a desejar!!",negativo,entrega,"hesitei com a e 0: produto bom, prazo e transportadora ruins"
+48988,Excelente produto !!!!! Eu indico!!!! Entrega foi rápida e produto entregue perfeito.,positivo,qualidade_produto,hesitei com e
+80540,"Muito bom, os livros chegaram antes do prazo de entrega.",positivo,entrega,
+56836,"muito ,bom chego no prazo e excelente qualidade..recomendo",positivo,qualidade_produto,hesitei com e
+92778,NAO CONPRE EUE UUE EU EU EU EU EU UEN FALO N COMPRE NAO GASTE SEU DINHEIRO A TOA,negativo,outro,sem motivo dado
+21836,"Produto muito bom, leve e com ótima qualidade de imagem. Prazo de entrega conforme o prometido.",positivo,qualidade_produto,hesitei com e
+88291,"Multifuncional, deixa a barba como você quer, de uma forma muito fácil e prática. Mantém a carga por um bom tempo.",positivo,qualidade_produto,
+122174,"Não gostei, pois na foto há o porta travesseiros, qdo chegou vi q era só o edredom. Esta escrito na descrição, mas acho que se não tem porta travesseiro, então a foto deveria ser só do edredom.",negativo,anuncio_divergente,
+118654,"Aparelho muito bom, mas não tem flash frontal. Não em atentei a isso no momento da compra, mas baixei um aplicativo",positivo,qualidade_produto,"hesitei com 0: elogia, ressalva sem flash frontal"
+74868,As lâminas fatiadoras ficam um pouca afastadas da tampa então qdo as verduras e legumes chegam no final o corte é feito de forma irregular....Aconteceu o mesmo com o queijo... Ele é fácil de usar....isso é um ponto positivo....,neutro,qualidade_produto,"hesitei com -: corte irregular, mas facil de usar"
+40343,"Achei um pouco frágil, esperava que fosse mais resitente.",negativo,qualidade_produto,hesitei com 0
+78196,"Bom dia, queria saber de quem tem esse modelo de maquina se ela deixa o cabelo da barba no zero bem lisinha ou ela so apara e fica um pouco alto.",neutro,outro,"pergunta, hesitei com q"
+54717,"Analisar algo que não recebi? Interessante. O produto não chegou, ele retornou para o remetente, sendo que no dia da dita entrega eu não sai de casa e passei o endereço correto, e não venham me culpar dizendo que formulei o endereço de maneira incorreta, sendo que comprei um outro produto anteriormente pelo site e ele foi entregue.",negativo,entrega,
 26481,Comprei essa pelicula Hprime porem foi entregue uma pelicula generica.,,,
 19413,"Pelo preço que custa, o produto está de bom tamanho.",,,
 6252,"O aparelho desempenha bem todas as funções, é pratico, bonito e versátil. Para quem busca um Smartphone compacto, e para utilização de redes sociais, ele e extremamente eficiente. Câmera frontal e traseira não são boas. Fotos ficam desfocadas. A bateria fica a desejar, no modo econômico dura no máximo dois dias com internet ligada. Se usar muito o aparelho a bateria não dura um dia.",,,
