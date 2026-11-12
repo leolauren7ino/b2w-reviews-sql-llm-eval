@@ -37,3 +37,23 @@
 38 +q
 39 +e
 40 -d hesitei com q: cores erradas e baixa qualidade
+41 -e hesitei com d: entrega demorada e nao e bivolt
+42 +q hesitei com e: elogia o aparelho e a entrega, ressalva so o som baixo
+43 -q hesitei com d: manchas e tamanho diferente do esperado
+44 -d
+45 +q
+46 +q
+47 -q hesitei com a: produto estragado, cita atendimento ruim
+48 -d hesitei com q: nao e como na foto, muito fino
+49 +q hesitei com e: igual a imagem, supera expectativa, entrega rapida
+50 -e hesitei com a: pedido sem nota fiscal apos semanas
+51 +p hesitei com 0 e q: gostou muito, mas acha o preco alto para 16 GB
+52 +q
+53 -q hesitei com d: fraco e sem pilha
+54 +q
+55 -a hesitei com 0: gostou, mas termina reclamando de garantia e falta de manutencao
+56 -q hesitei com e: peças folgadas e transportadora nao entregou na porta
+57 +q hesitei com p: igual a original e mais em conta
+58 +q hesitei: ambiguo, li como elogio (nao gera erro no painel)
+59 +q hesitei com e e p
+60 0q hesitei com +: cedo para avaliar, atendendo por enquanto
