@@ -159,26 +159,26 @@ review_id,review_text,sentimento,tema,nota
 101262,"Recomendo, otimo custo benefício ..................................................",positivo,preco,hesitei com q
 2717,"nao recebi ainda, faz um mes que fiz o pedido. Fui ao correio e nao estava la",negativo,entrega,
 114880,"Comprei este notebook para substituir um Asus cansado de prestar bons serviços (mas ainda funcionando, tanto que irá para minha filha). Embora ainda com poucos programas instalados por mim, o Samsung trava a todo instante. Desinstalei o antivírus McFee que veio instalado, temendo que houvesse conflito com o Defender. De nada adiantou. Suspeito que haja tantos programas inúteis para mim instalados que o desempenho seja muito baixo. Involuímos.",negativo,qualidade_produto,
-54168,"O produto atende às expectativas, bom espaço para brincadeiras! Comprei em valor promocional com excelente custo benefício. A entrega foi realizada em prazo super rápido.",,,
-21315,"Produto muito bom, não faz muito barulho fácil manuseio.",,,
-9909,"Produto ótimo e de grande ajuda, recomendo sem dúvidas",,,
-97551,Ótimo aparelho funciona perfeitamente tanto a smartv quanto os 4k de resolução recomendo,,,
-28529,"Das 3 unidades compradas (2) apresentam alto nivel de ruido no motor, foi acionada o Sac da Ventisol. Aparentemente a solução será efetuada a contento. Vou aguardar. Posteriormente poderei efetuar nova avaliação.",,,
-118430,"O produto têm algumas qualidades: é de tela grande, fácil de manusear, luminosidade adequada. Mas, têm muitos problemas: trava bastante, esquenta demais, câmera horrível, som de péssima qualidade, a bateria acaba muito rápido e o pior de tudo, você não pode usar ou não tem a opção de fazer chamada escolhendo o chip na hora de ligar. Não recomendo a compra.",,,
-69957,para o preço ate que é Boa um pouco complicada as funções espero aprender logo!,,,
-84101,"China ridículo! Crining, exbom, só faltou do outro lado xicaxicabum. Deviam avisar que com as bordas afiadas dele vai economizar e não precisa mais comprar facas e com aqueles pés de borracha o teclado desliza mais que lavadora Brastemp.",,,
-18398,Fácil manuseio mesmo para os não experts da cozinha!! Receitas simples e de facilidade de uso. Entrega bem antes do prazo previsto.,,,
-95412,"A entrega da Americanas.com como sempre eficiente, mas o produto desta vez não agradou. um banho de piscina rasa e o relógio encheu D'agua.......",,,
-33288,"Das 10 peças anunciadas, 2 estão com defeito! Não consigo contato com a Americanas, nem com a loja para a solicitação da troca das peças com defeito!!!",,,
-27544,"O produto é bom e sua utilização é simples. Porém o controle tem curto alcance e seus botões são meio chatinhos, falhando algumas vezes. O som é bom, não é muito alto, mas a potência de iluminação branca da lâmpada não é das melhores. Para utilizar como a lâmpada de um cômodo é fraco, apesar das especificações técnicas dizerem que a potência é equivalente a uma lâmpada de LED de 3W (ou uma incandescente de 60W). A parte colorida é bem legal! Garante boa diversão para a criançada!",,,
-91472,MAIS DE UM MES DE COMPRA E NÃO RECEBI NADA. NÃO RECOMENDO ESSA LOJA PARCEIRA,,,
-119497,"A bota é linda, mas é muito desconfortável , por ser muito alta, o pé fica muito inclinado e dói muito, nem a meia pata compensa a altura do salto. O material e o acabamento são bem feitos e de qualidade.",,,
-31897,"Gostei muito da panela, muito prática, atendeu bem à expectativa. Recomendo.",,,
-33921,"Adorei o resultado, fralda muito macia, sem vazamentos durante o período noturno. O formato roupinha, facilitou a troca. A huggies solft touch está de parabéns.",,,
-95437,O perfil do produto ficou dentro da minha expectativa. Obrigada,,,
-43343,"Voçes tem que me devolver meu dinheiro corrigido pois não entregam o produto, ainda cabe indenização por danos morais e materias",,,
-120188,"Valeo mutio a longa espera, ele é bom!!!!.....................",,,
-12724,adoro essência aqua. pedi o de 75ml mas veio o de 125ml.,,,
+54168,"O produto atende às expectativas, bom espaço para brincadeiras! Comprei em valor promocional com excelente custo benefício. A entrega foi realizada em prazo super rápido.",positivo,qualidade_produto,hesitei com e e p
+21315,"Produto muito bom, não faz muito barulho fácil manuseio.",positivo,qualidade_produto,
+9909,"Produto ótimo e de grande ajuda, recomendo sem dúvidas",positivo,qualidade_produto,
+97551,Ótimo aparelho funciona perfeitamente tanto a smartv quanto os 4k de resolução recomendo,positivo,qualidade_produto,
+28529,"Das 3 unidades compradas (2) apresentam alto nivel de ruido no motor, foi acionada o Sac da Ventisol. Aparentemente a solução será efetuada a contento. Vou aguardar. Posteriormente poderei efetuar nova avaliação.",negativo,qualidade_produto,"hesitei com 0 e a: defeito, mas sac resolvendo"
+118430,"O produto têm algumas qualidades: é de tela grande, fácil de manusear, luminosidade adequada. Mas, têm muitos problemas: trava bastante, esquenta demais, câmera horrível, som de péssima qualidade, a bateria acaba muito rápido e o pior de tudo, você não pode usar ou não tem a opção de fazer chamada escolhendo o chip na hora de ligar. Não recomendo a compra.",negativo,qualidade_produto,
+69957,para o preço ate que é Boa um pouco complicada as funções espero aprender logo!,neutro,qualidade_produto,"hesitei com p: boa pelo preco, funcoes complicadas"
+84101,"China ridículo! Crining, exbom, só faltou do outro lado xicaxicabum. Deviam avisar que com as bordas afiadas dele vai economizar e não precisa mais comprar facas e com aqueles pés de borracha o teclado desliza mais que lavadora Brastemp.",negativo,qualidade_produto,sarcasmo
+18398,Fácil manuseio mesmo para os não experts da cozinha!! Receitas simples e de facilidade de uso. Entrega bem antes do prazo previsto.,positivo,qualidade_produto,hesitei com e
+95412,"A entrega da Americanas.com como sempre eficiente, mas o produto desta vez não agradou. um banho de piscina rasa e o relógio encheu D'agua.......",negativo,qualidade_produto,"hesitei com 0: entrega boa, relogio encheu d'agua"
+33288,"Das 10 peças anunciadas, 2 estão com defeito! Não consigo contato com a Americanas, nem com a loja para a solicitação da troca das peças com defeito!!!",negativo,atendimento,hesitei com q
+27544,"O produto é bom e sua utilização é simples. Porém o controle tem curto alcance e seus botões são meio chatinhos, falhando algumas vezes. O som é bom, não é muito alto, mas a potência de iluminação branca da lâmpada não é das melhores. Para utilizar como a lâmpada de um cômodo é fraco, apesar das especificações técnicas dizerem que a potência é equivalente a uma lâmpada de LED de 3W (ou uma incandescente de 60W). A parte colorida é bem legal! Garante boa diversão para a criançada!",neutro,qualidade_produto,hesitei com +
+91472,MAIS DE UM MES DE COMPRA E NÃO RECEBI NADA. NÃO RECOMENDO ESSA LOJA PARCEIRA,negativo,entrega,
+119497,"A bota é linda, mas é muito desconfortável , por ser muito alta, o pé fica muito inclinado e dói muito, nem a meia pata compensa a altura do salto. O material e o acabamento são bem feitos e de qualidade.",negativo,qualidade_produto,"hesitei com 0: linda e bem feita, mas desconfortavel"
+31897,"Gostei muito da panela, muito prática, atendeu bem à expectativa. Recomendo.",positivo,qualidade_produto,
+33921,"Adorei o resultado, fralda muito macia, sem vazamentos durante o período noturno. O formato roupinha, facilitou a troca. A huggies solft touch está de parabéns.",positivo,qualidade_produto,
+95437,O perfil do produto ficou dentro da minha expectativa. Obrigada,positivo,qualidade_produto,hesitei com 0
+43343,"Voçes tem que me devolver meu dinheiro corrigido pois não entregam o produto, ainda cabe indenização por danos morais e materias",negativo,entrega,hesitei com a
+120188,"Valeo mutio a longa espera, ele é bom!!!!.....................",positivo,qualidade_produto,hesitei com e e 0
+12724,adoro essência aqua. pedi o de 75ml mas veio o de 125ml.,neutro,anuncio_divergente,hesitei com + e -: veio tamanho maior que o pedido
 123100,"Escolhi está barraca e me mandaram uma similar disponível tb no site, mais barato! Não me enviaram o produto correto!",,,
 61978,"Precisa de muita pressão p funcionar , sai pouca agua",,,
 102140,Muito bom a câmera.se adaptadou perfeitamente ao meu carro e ao rádio. Além disso foi de fácil instalação.,,,

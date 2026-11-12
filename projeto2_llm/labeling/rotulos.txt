@@ -162,3 +162,25 @@
 158 +p hesitei com q
 159 -e
 160 -q
+
+161 +q hesitei com e e p
+162 +q
+163 +q
+164 +q
+165 -q hesitei com 0 e a: defeito, mas SAC resolvendo
+166 -q
+167 0q hesitei com p: boa pelo preco, funcoes complicadas
+168 -q sarcasmo
+169 +q hesitei com e
+170 -q hesitei com 0: entrega boa, relogio encheu d'agua
+
+171 -a hesitei com q
+172 0q hesitei com +
+173 -e
+174 -q hesitei com 0: linda e bem feita, mas desconfortavel
+175 +q
+176 +q
+177 +q hesitei com 0
+178 -e hesitei com a
+179 +q hesitei com e e 0
+180 0d hesitei com + e -: veio tamanho maior que o pedido
