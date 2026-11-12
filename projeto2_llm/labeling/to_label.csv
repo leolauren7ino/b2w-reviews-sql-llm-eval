@@ -79,26 +79,26 @@ review_id,review_text,sentimento,tema,nota
 88514,"Confortável, bonita, só o cheiro do plástico que não é muito bom, mas nada que um álcool não resolva rs. Realmente adoreeeeei! fica linda no pé. Recomendo comprar um numero maior que o seu. Eu calço 35, comprei 36 pra ficar confortável, como se trata de um salto alto. Super vale a pela! A entrega foi na velocidade da luz, 3 dias.",positivo,qualidade_produto,hesitei com e
 25905,Bom. Bonito leve e pratico. Usei poucas vezes. Ate agora cumpriu bem o prometido. Vamus ver cm o passar dos dias. .,positivo,qualidade_produto,
 98108,"Gostei do produto e vai servir para as minhas necessidades, mas a espuma do assento não é firme o suficiente para dormir bem. O bau é bem espaçoso",neutro,qualidade_produto,hesitei com +
-31513,"Produto com problemas, a borracha do relogio veio desconectada, o parafuso e vai na parte onde escuta os batimentos nao encaixa direito, a parte do relogio esta girando e como nao entendo do aparelho eu acho que nao deve estar aferindo a pressao direito, nao recomendo . So quero ver o que a lojas Americanas vai resolver para mim",,,
-92575,"Produto de difícil manuseio, pessoas mais idosa não consegue utilizar.",,,
-2827,Adquiri dois tablets deste modelo. Me arrependi porque o sistema operacional nele (Android) é muito lento. Meus filhos reclamam da demora que o sistema tem para acessar aplicativos. NÃO RECOMENDO!,,,
-98450,"Produto chegou antes do tempo previsto, embalagem perfeita e produto de ótima qualidade.",,,
-857,"Tudo bem com o funcionamento, atendeu as expectativas.",,,
-3581,"Gostei muito das panelas vieram bem embaladas a entrega foi dentro do prazo estabelecido preço justo, recomendo a compra pra todos",,,
-21254,"Amei, veio tudo certinho, celular é rápido, com bateria duradoura.. recomendo bastante!",,,
-115992,"primeiro o frasco da solução limpadora não e este tamanho apresentado, deve vir no máximo 30 ml. os frascos vem sem rotulo. e a tinta é de qualidade ruim.",,,
-128924,"Produto muito bom.Pena que a embalagem é fraca por ser apenas o invólucro plástico dos Correios.Mas produto veio sem problemas.Mas fica a ressalva da embalagem,pois o produto vim solto pode amassar e estragar o produto.Eu tive sorte nesse produto.Parabéns para as Lojas Americanas pela transparência e eficiência do processo de compra.",,,
-31918,"Produto chegou dentro do período estabelecido, faltou originalidade do produto em semelhança ao produto original.A cor se mostra um preto fosco fugindo da cor original do veículo.",,,
-66529,"O PRODUTO EM SI É BOM, PORÉM NÃO RECEBI E CONSTA COMO ENTREGUE!!",,,
-30176,"A entrega foi rápida. Assim que chegou, fiz uso da máquina, que correspondeu satisfatoriamente, pois, fez o que se espera, cortou o cabelo. Eu já havia comprado várias outras que não cortavam, só embuchavam. Bom produto.",,,
-121834,"como vou ter certeza que não estou em um site clonado? Pois gerei um boleto anterior de um celular Motorola por 501,00 e ao verificar em meu PC não constava nem um pedido ou pagamento pendente.",,,
-129235,são bonitas mas vieram com defeito posterior e estou pedindo a troca delas,,,
-92322,"Produto bem abaixo das expectativas, não cumpre o que promete, na maioria das vezes temos que apertar a pasta para sair alguma coisa, as escovas não encaixam no suporte de escovas, não ficam penduradas como deveriam ficar, ficam na perpendicular, quase sempre temos que apertar a escova varias vezes no suporte para sair alguma pasta, produto muito ruim, pelo menos este, não condiz com a propaganda, infelizmente foi um dinheiro mal empregado, não houve benefícios.",,,
-113802,Gostei muito do produto . Entrega super rápida . Parabéns pela agilidade na entrega e qualidade no produto .,,,
-128370,Ótimo produto preço acessível e entrega no prazo com qualidade,,,
-68970,Ainda não chegou o produto Como é pedido para avaliar se não chegou?,,,
-89069,"O aparelho apresentou depois de dois de uso, espero que tenha sido um problema pontual, contudo ainda não consegui acionar a garantia.",,,
-32933,"O quadro é lindo,mas o frete é um absurdo,98,00 sudeste. Quase o preço do quadro.",,,
+31513,"Produto com problemas, a borracha do relogio veio desconectada, o parafuso e vai na parte onde escuta os batimentos nao encaixa direito, a parte do relogio esta girando e como nao entendo do aparelho eu acho que nao deve estar aferindo a pressao direito, nao recomendo . So quero ver o que a lojas Americanas vai resolver para mim",negativo,qualidade_produto,hesitei com a
+92575,"Produto de difícil manuseio, pessoas mais idosa não consegue utilizar.",negativo,qualidade_produto,
+2827,Adquiri dois tablets deste modelo. Me arrependi porque o sistema operacional nele (Android) é muito lento. Meus filhos reclamam da demora que o sistema tem para acessar aplicativos. NÃO RECOMENDO!,negativo,qualidade_produto,
+98450,"Produto chegou antes do tempo previsto, embalagem perfeita e produto de ótima qualidade.",positivo,qualidade_produto,hesitei com e
+857,"Tudo bem com o funcionamento, atendeu as expectativas.",positivo,qualidade_produto,
+3581,"Gostei muito das panelas vieram bem embaladas a entrega foi dentro do prazo estabelecido preço justo, recomendo a compra pra todos",positivo,qualidade_produto,hesitei com e e p
+21254,"Amei, veio tudo certinho, celular é rápido, com bateria duradoura.. recomendo bastante!",positivo,qualidade_produto,
+115992,"primeiro o frasco da solução limpadora não e este tamanho apresentado, deve vir no máximo 30 ml. os frascos vem sem rotulo. e a tinta é de qualidade ruim.",negativo,anuncio_divergente,hesitei com q
+128924,"Produto muito bom.Pena que a embalagem é fraca por ser apenas o invólucro plástico dos Correios.Mas produto veio sem problemas.Mas fica a ressalva da embalagem,pois o produto vim solto pode amassar e estragar o produto.Eu tive sorte nesse produto.Parabéns para as Lojas Americanas pela transparência e eficiência do processo de compra.",positivo,qualidade_produto,"hesitei com 0: elogia, ressalva da embalagem"
+31918,"Produto chegou dentro do período estabelecido, faltou originalidade do produto em semelhança ao produto original.A cor se mostra um preto fosco fugindo da cor original do veículo.",negativo,anuncio_divergente,hesitei com q: cor diferente do original
+66529,"O PRODUTO EM SI É BOM, PORÉM NÃO RECEBI E CONSTA COMO ENTREGUE!!",negativo,entrega,
+30176,"A entrega foi rápida. Assim que chegou, fiz uso da máquina, que correspondeu satisfatoriamente, pois, fez o que se espera, cortou o cabelo. Eu já havia comprado várias outras que não cortavam, só embuchavam. Bom produto.",positivo,qualidade_produto,hesitei com e
+121834,"como vou ter certeza que não estou em um site clonado? Pois gerei um boleto anterior de um celular Motorola por 501,00 e ao verificar em meu PC não constava nem um pedido ou pagamento pendente.",negativo,outro,hesitei com a: teme site clonado
+129235,são bonitas mas vieram com defeito posterior e estou pedindo a troca delas,negativo,qualidade_produto,
+92322,"Produto bem abaixo das expectativas, não cumpre o que promete, na maioria das vezes temos que apertar a pasta para sair alguma coisa, as escovas não encaixam no suporte de escovas, não ficam penduradas como deveriam ficar, ficam na perpendicular, quase sempre temos que apertar a escova varias vezes no suporte para sair alguma pasta, produto muito ruim, pelo menos este, não condiz com a propaganda, infelizmente foi um dinheiro mal empregado, não houve benefícios.",negativo,qualidade_produto,hesitei com d
+113802,Gostei muito do produto . Entrega super rápida . Parabéns pela agilidade na entrega e qualidade no produto .,positivo,entrega,hesitei com q
+128370,Ótimo produto preço acessível e entrega no prazo com qualidade,positivo,qualidade_produto,hesitei com p e e
+68970,Ainda não chegou o produto Como é pedido para avaliar se não chegou?,negativo,entrega,
+89069,"O aparelho apresentou depois de dois de uso, espero que tenha sido um problema pontual, contudo ainda não consegui acionar a garantia.",negativo,qualidade_produto,hesitei com a: garantia
+32933,"O quadro é lindo,mas o frete é um absurdo,98,00 sudeste. Quase o preço do quadro.",negativo,preco,"hesitei com e e 0: frete caro, gostou do quadro"
 57499,Material muito fraco não serve nem para colocar roupa de bebê na comoda ela é muito fraquinha,,,
 88923,Comprei a uma semana e não esquenta Um lado é média temperatura e o outro baixa Quero trocar pra saber se é problema da marca ou do aparelho que veio pra mim. Com o proceder?,,,
 9919,"Carrega completamente o celular, várias vezes. Tem uma eficiência energética considerável é um desempenho excelente.",,,
