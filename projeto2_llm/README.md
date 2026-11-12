@@ -1,8 +1,8 @@
 # Projeto 2 — Classificador de avaliações com LLM e avaliação honesta
 
-> **Estado deste README: esqueleto.** O pipeline está construído e testado, mas **nenhum número
-> abaixo existe ainda**: faltam o gabarito rotulado por você e uma chave de API. Os trechos
-> marcados com `⟦…⟧` devem ser preenchidos com a saída de `report.py`, não com estimativas.
+> **Estado deste README: resultados pendentes.** O pipeline está construído e testado e o gabarito
+> de 200 avaliações existe, mas **os números da avaliação ainda não foram publicados aqui**. Os
+> trechos marcados com `⟦…⟧` devem ser preenchidos com a saída de `report.py`, não com estimativas.
 > Um README com números inventados é o oposto do que este projeto quer provar.
 
 ## A pergunta
@@ -11,13 +11,17 @@ Quanto, onde ele erra, e o quanto o resultado muda de uma execução para outra?
 
 ## Dados
 B2W-Reviews01 (avaliações reais do e-commerce brasileiro, ~132 mil linhas), já limpo no Projeto 1.
-Gabarito: **200 avaliações rotuladas por mim, às cegas quanto à nota em estrelas** (40 por estrela,
-então a distribuição *não* é a natural — as métricas valem para este conjunto).
+Gabarito: **200 avaliações rotuladas às cegas quanto à nota em estrelas** (40 por estrela, então a
+distribuição *não* é a natural — as métricas valem para este conjunto). **Quem rotulou:** as linhas 1 a 3
+foram decididas por mim; as linhas 4 a 200 foram rotuladas com a ajuda do Claude, seguindo o
+`labeling/GUIA_DE_ROTULAGEM.md`, com notas de hesitação na coluna `nota`. Portanto, a acurácia deste
+projeto mede a **concordância do modelo avaliado com um gabarito gerado por outro LLM**, e não com um
+gabarito 100% humano. A verificação humana do gabarito está descrita em "Limitações".
 Divisão fixa (seed 42), estratificada por sentimento: **100 dev** (para ajustar o prompt) e
 **100 test** (usado uma única vez por versão final de prompt; o código recusa uma segunda).
 
 ## Pipeline
-`prepare_sample.py` → *(rotulagem manual)* → `split.py` → `run_eval.py` → `report.py`
+`prepare_sample.py` → *(rotulagem do gabarito)* → `split.py` → `run_eval.py` → `report.py`
 
 - Saída do modelo em JSON, validada com pydantic (`schema.py`, sem campos extras, valores só da taxonomia).
 - `llm.py` trata JSON quebrado/envolto em prosa, valores fora da taxonomia, `refusal`/`max_tokens` e erros
@@ -68,7 +72,8 @@ Teste final (uma vez): ⟦números do test⟧. Diferença dev vs test: ⟦⟧ �
 
 ## Limitações
 - 200 exemplos: com 100 no teste, cada ponto percentual de acurácia é 1 item; diferenças de poucos pontos são ruído.
-- Um único rotulador (eu): o teto de acurácia é a minha própria consistência (⟦re-rotulagem de 30 itens: X% de concordância comigo mesmo⟧).
+- Gabarito gerado com ajuda de um LLM (Claude) em 197 dos 200 itens: o resultado mede concordância entre modelos, não acerto contra um gabarito humano. Verificação humana: ⟦N itens rotulados por mim às cegas, X% de concordância com o gabarito⟧.
+- A classe `neutro` tem só 13 exemplos (6 no dev e 7 no teste): as métricas dela quase não significam nada.
 - Distribuição estratificada por estrelas, não a natural.
 
 ## Como reproduzir
@@ -76,7 +81,7 @@ Teste final (uma vez): ⟦números do test⟧. Diferença dev vs test: ⟦⟧ �
 pip install -r ../requirements.txt
 export ANTHROPIC_API_KEY=...            # e PGHOST/PGPORT/PGUSER/PGDATABASE se não for o padrão
 python prepare_sample.py                # já gerado: labeling/to_label.csv
-# rotule labeling/to_label.csv seguindo labeling/GUIA_DE_ROTULAGEM.md
+# o gabarito já está preenchido em labeling/to_label.csv (ver "Dados" sobre quem rotulou)
 python split.py
 python run_eval.py --prompt v1 --split dev --runs 3
 python report.py --prompt v1 --split dev
