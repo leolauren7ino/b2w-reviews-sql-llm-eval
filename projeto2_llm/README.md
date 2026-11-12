@@ -122,6 +122,29 @@ Como o experimento foi desenhado (e o que ele não permite concluir):
 - **Incerteza:** com 100 itens de teste, o relatório traz IC 95% por bootstrap; diferenças menores que a largura do intervalo são ruído.
 - **Custo:** o relatório registra tempo de treino e de inferência; o baseline não tem custo de API nem limite de requisições.
 
+### Resultado: baseline x LLM no mesmo teste (100 itens, sentimento)
+
+| | TF-IDF + reg. logística | Gemini (prompt v1, 2 execuções) |
+|---|---|---|
+| Acurácia | 0,84 (IC 95%: 0,77 a 0,91) | 0,95 e 0,96 |
+| F1 macro | 0,715 | 0,84 |
+| Recall `negativo` | 0,78 (36 de 46) | 0,99 |
+| Recall `neutro` | 0,43 (3 de 7) | 0,43 |
+| Custo | treino 21 s, inferência 5 ms por 100 itens, sem API | chamadas de API no plano gratuito, ~7 s por item (inclui espera do limite de taxa) |
+
+Leitura, com o que os dados sustentam:
+- O LLM ficou acima do limite superior do intervalo do baseline (0,91). A diferença provavelmente é real, mas a comparação
+  é aproximada: o intervalo é só do baseline, e um teste pareado (McNemar) exigiria as previsões do LLM por item.
+- A diferença vem do `negativo`: o baseline errou 10 avaliações negativas (5 para positivo, 5 para neutro). No `neutro`
+  os dois empatam, mas com 7 itens isso não permite conclusão.
+- Parte da diferença é de critério, não de capacidade: o baseline aprendeu com estrelas e o gabarito é uma leitura do texto
+  feita por Claude. Um LLM tende a concordar mais com outro LLM do que com uma nota. Não sei quanto da diferença é isso.
+- Não investiguei *por que* o baseline erra os 10 negativos (suspeita, não verificada: avaliações com nota alta e texto crítico,
+  ou texto misto). É a análise de erros que falta.
+- Se o objetivo é separar positivo de negativo a custo zero e com latência de milissegundos, o baseline já chega a 0,84
+  e roda sem API nem limite de requisições. O LLM compensa quando o erro em `negativo` é caro (reclamações que passam
+  despercebidas), com o custo de depender de uma API e de variar um pouco entre execuções.
+
 ## Limitações
 - 200 exemplos: com 100 no teste, cada ponto percentual de acurácia é 1 item; diferenças de poucos pontos são ruído.
 - Gabarito rotulado por Claude e avaliado com outro LLM (Gemini): a concordância entre dois
