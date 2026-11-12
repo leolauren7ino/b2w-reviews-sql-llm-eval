@@ -1,5 +1,7 @@
 # Projeto 2 — Classificador de avaliações com LLM e avaliação honesta
 
+*English summary: LLM sentiment/topic classifier (Gemini free tier) evaluated on a 200-item gold set labeled by Claude, fixed dev/test split, validated JSON output, run-to-run consistency, SQL error analysis, plus a TF-IDF + logistic regression baseline (scikit-learn) on the same test items. Details below in Portuguese.*
+
 > **Estado:** pipeline executado de ponta a ponta (dev e teste, prompt v1, Gemini no plano gratuito).
 > O gabarito foi rotulado por Claude (Anthropic), não por humano: veja "Limitações".
 
@@ -101,6 +103,24 @@ prompt corrija; a minha própria regra de desempate entre temas não foi consist
 estaria ajustando o prompt ao ruído do gabarito.
 Teste final (uma vez): sentimento 0,95 e 0,96; tema 0,83 e 0,83. Diferença dev vs teste: +0,02 em
 sentimento e 0,00 em tema, sem sinal de ajuste ao dev, já que o prompt não foi ajustado.
+
+## Baseline clássico (scikit-learn) e a escolha de modelo
+Para responder "o LLM compensa?", `baseline_tfidf.py` treina TF-IDF (1-2 gramas) + regressão logística e avalia nos **mesmos
+itens de dev e teste** do LLM. Sem API, sem Postgres:
+
+```bash
+python baseline_tfidf.py --raw ../data/raw/b2w.csv    # gera reports/baseline_tfidf_dev.md e _test.md
+```
+
+Como o experimento foi desenhado (e o que ele não permite concluir):
+- **Treino:** avaliações do B2W com rótulo derivado das estrelas (1-2 negativo, 3 neutro, 4-5 positivo), excluindo os 200
+  itens do gabarito e textos idênticos a eles. Hiperparâmetros fixos, definidos antes de ver dev/teste.
+- **Critérios diferentes:** o baseline aprende "o que a nota diz"; o gabarito foi rotulado por Claude lendo o texto, sem ver a nota.
+  Parte do erro do baseline é discordância entre nota e texto (um 3 estrelas que o texto lê como negativo), não falha de modelo.
+  A comparação com o LLM é, portanto, entre modelos avaliados no mesmo teste, mas treinados/instruídos por critérios distintos.
+- **Só sentimento:** o tema existe apenas no gabarito de 200 itens, pequeno demais para treinar um modelo.
+- **Incerteza:** com 100 itens de teste, o relatório traz IC 95% por bootstrap; diferenças menores que a largura do intervalo são ruído.
+- **Custo:** o relatório registra tempo de treino e de inferência; o baseline não tem custo de API nem limite de requisições.
 
 ## Limitações
 - 200 exemplos: com 100 no teste, cada ponto percentual de acurácia é 1 item; diferenças de poucos pontos são ruído.
