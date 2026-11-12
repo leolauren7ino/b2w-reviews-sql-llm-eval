@@ -119,26 +119,26 @@ review_id,review_text,sentimento,tema,nota
 40343,"Achei um pouco frágil, esperava que fosse mais resitente.",negativo,qualidade_produto,hesitei com 0
 78196,"Bom dia, queria saber de quem tem esse modelo de maquina se ela deixa o cabelo da barba no zero bem lisinha ou ela so apara e fica um pouco alto.",neutro,outro,"pergunta, hesitei com q"
 54717,"Analisar algo que não recebi? Interessante. O produto não chegou, ele retornou para o remetente, sendo que no dia da dita entrega eu não sai de casa e passei o endereço correto, e não venham me culpar dizendo que formulei o endereço de maneira incorreta, sendo que comprei um outro produto anteriormente pelo site e ele foi entregue.",negativo,entrega,
-26481,Comprei essa pelicula Hprime porem foi entregue uma pelicula generica.,,,
-19413,"Pelo preço que custa, o produto está de bom tamanho.",,,
-6252,"O aparelho desempenha bem todas as funções, é pratico, bonito e versátil. Para quem busca um Smartphone compacto, e para utilização de redes sociais, ele e extremamente eficiente. Câmera frontal e traseira não são boas. Fotos ficam desfocadas. A bateria fica a desejar, no modo econômico dura no máximo dois dias com internet ligada. Se usar muito o aparelho a bateria não dura um dia.",,,
-46549,"Recomendo, muito bom, ótimo tecido, produto de ótima qualidade",,,
-37937,Fiz a compra 08/12/2017 e até hoje não chegou no meu endereço! Evitem aborrecimentos. Não indico!,,,
-96737,"Fiz o pedido, me mandaram a mercadoria errada, me fizeram esperar quase um mês e ainda cancelaram sem nenhuma satisfação.",,,
-49223,"Produto de excelente qualidade, leve e prático. Superou minhas expectativas, super recomendo pois atende minhas necessidades.",,,
-17671,Produto chegou antes do prazo muito bom adorei super indico revela fotos via waifae Muuuiiiiiiiiiiiiitooooooooooo boooooooommmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm Mmmm,,,
-47096,Só achei que poderia ser um pouco maior cada livrinho. Mas são lindinhos,,,
-1158,Essa garrafa não mantém nem um pouco a temperatura da água gelada.,,,
-30349,"Muito bom rapido, a tinta compensa, economica demais, super facil de isa",,,
-115711,"Comprei e estou solicitando devolução, porque no anuncio fala que é original, mas é uma replica do controle da Nintendo.",,,
-15134,"O produto é ótimo, porém tem falhas que pelo preço não poderiam existir, pouca memória 32GB e não tem como utilizar a conexão HDMI.",,,
-5491,"Produto excelente, atendeu todas as expectativas, imagem com ótima qualidade e fácil de mexer nas configurações . Recomendo",,,
-83322,"a capa do colchão de casal até que mais ou menos, mais o de solteiro é ruim, e o de casal chegou com o ziper estragado.",,,
-47838,"Já conhecia o produto e fiquei extremamente satisfeito com a compra realizada no site da Americanas, mesmo o produto sendo entregue por empresa parceira. Foi super tranquila a compra, a forma de pagamento e a entrega.",,,
-85310,"Enganação - 2 Guardanapos por embalagem Vem apenas dois guardanapos!!!!!!!!! Mercadoria velha, fedendo e com a embalagem imunda!!! Me senti roubado. Foi direto pro lixo.",,,
-71241,Eu e junto meu marido temos 190 kg. Ele é bem fraco e quebra a Madeira. Não pode ficar de pé.,,,
-79624,Demorou 4 meses pra. Na minha. Casa E o atendimento e pessimo.,,,
-52436,"É forte e o fio é longo, além de ser bonito esteticamente, estou gostando",,,
+26481,Comprei essa pelicula Hprime porem foi entregue uma pelicula generica.,negativo,anuncio_divergente,
+19413,"Pelo preço que custa, o produto está de bom tamanho.",positivo,preco,hesitei com q
+6252,"O aparelho desempenha bem todas as funções, é pratico, bonito e versátil. Para quem busca um Smartphone compacto, e para utilização de redes sociais, ele e extremamente eficiente. Câmera frontal e traseira não são boas. Fotos ficam desfocadas. A bateria fica a desejar, no modo econômico dura no máximo dois dias com internet ligada. Se usar muito o aparelho a bateria não dura um dia.",neutro,qualidade_produto,hesitei com + e -
+46549,"Recomendo, muito bom, ótimo tecido, produto de ótima qualidade",positivo,qualidade_produto,
+37937,Fiz a compra 08/12/2017 e até hoje não chegou no meu endereço! Evitem aborrecimentos. Não indico!,negativo,entrega,
+96737,"Fiz o pedido, me mandaram a mercadoria errada, me fizeram esperar quase um mês e ainda cancelaram sem nenhuma satisfação.",negativo,anuncio_divergente,hesitei com e e a
+49223,"Produto de excelente qualidade, leve e prático. Superou minhas expectativas, super recomendo pois atende minhas necessidades.",positivo,qualidade_produto,
+17671,Produto chegou antes do prazo muito bom adorei super indico revela fotos via waifae Muuuiiiiiiiiiiiiitooooooooooo boooooooommmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm Mmmm,positivo,qualidade_produto,hesitei com e
+47096,Só achei que poderia ser um pouco maior cada livrinho. Mas são lindinhos,positivo,qualidade_produto,hesitei com 0
+1158,Essa garrafa não mantém nem um pouco a temperatura da água gelada.,negativo,qualidade_produto,
+30349,"Muito bom rapido, a tinta compensa, economica demais, super facil de isa",positivo,qualidade_produto,hesitei com p
+115711,"Comprei e estou solicitando devolução, porque no anuncio fala que é original, mas é uma replica do controle da Nintendo.",negativo,anuncio_divergente,
+15134,"O produto é ótimo, porém tem falhas que pelo preço não poderiam existir, pouca memória 32GB e não tem como utilizar a conexão HDMI.",negativo,qualidade_produto,hesitei com p e 0
+5491,"Produto excelente, atendeu todas as expectativas, imagem com ótima qualidade e fácil de mexer nas configurações . Recomendo",positivo,qualidade_produto,
+83322,"a capa do colchão de casal até que mais ou menos, mais o de solteiro é ruim, e o de casal chegou com o ziper estragado.",negativo,qualidade_produto,
+47838,"Já conhecia o produto e fiquei extremamente satisfeito com a compra realizada no site da Americanas, mesmo o produto sendo entregue por empresa parceira. Foi super tranquila a compra, a forma de pagamento e a entrega.",positivo,outro,hesitei com e: gostou da experiencia de compra
+85310,"Enganação - 2 Guardanapos por embalagem Vem apenas dois guardanapos!!!!!!!!! Mercadoria velha, fedendo e com a embalagem imunda!!! Me senti roubado. Foi direto pro lixo.",negativo,anuncio_divergente,hesitei com q
+71241,Eu e junto meu marido temos 190 kg. Ele é bem fraco e quebra a Madeira. Não pode ficar de pé.,negativo,qualidade_produto,
+79624,Demorou 4 meses pra. Na minha. Casa E o atendimento e pessimo.,negativo,entrega,hesitei com a
+52436,"É forte e o fio é longo, além de ser bonito esteticamente, estou gostando",positivo,qualidade_produto,
 26458,"Produto com boa performance, rapidez no uso de seus aplicativos, excelente custo benefício, beleza na cor azul turquesa e lindo design. Recomendo.",,,
 130534,"Amei o meu produto, e chegou bem antes do previsto!!!",,,
 41131,"Comprei ele para presentear minha esposa ela gostou muito, alem da entrega que foi muito rápida mesmo com o feriado do carnaval. Parabéns a loja voltarei a fazer negocio.",,,

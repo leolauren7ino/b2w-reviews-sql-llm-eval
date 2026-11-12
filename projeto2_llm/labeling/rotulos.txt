@@ -118,3 +118,25 @@
 118 -q hesitei com 0
 119 0o pergunta, hesitei com q
 120 -e
+
+121 -d
+122 +p hesitei com q
+123 0q hesitei com + e -
+124 +q
+125 -e
+126 -d hesitei com e e a
+127 +q
+128 +q hesitei com e
+129 +q hesitei com 0
+130 -q
+
+131 +q hesitei com p
+132 -d
+133 -q hesitei com p e 0
+134 +q
+135 -q
+136 +o hesitei com e: gostou da experiencia de compra
+137 -d hesitei com q
+138 -q
+139 -e hesitei com a
+140 +q
