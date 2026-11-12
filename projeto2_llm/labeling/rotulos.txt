@@ -184,3 +184,25 @@
 178 -e hesitei com a
 179 +q hesitei com e e 0
 180 0d hesitei com + e -: veio tamanho maior que o pedido
+
+181 -d
+182 -q
+183 +q
+184 +q
+185 +q hesitei com 0
+186 -o hesitei com a e q: reclama da instalacao
+187 +q
+188 -d hesitei com 0: gostou, mas anuncio exagerou nos jogos
+189 -q hesitei com e e a
+190 +p hesitei com 0 e q
+
+191 -d hesitei com a e 0: produto otimo, loja mandou outra cor
+192 +q
+193 -e
+194 +q hesitei com a e o
+195 0o hesitei com - e q: pede troca de tamanho
+196 -q hesitei com a: defeito e falta de comunicacao
+197 -e
+198 +a hesitei com e: loja cumpre o prometido
+199 +q
+200 +q hesitei com 0 e p

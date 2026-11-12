@@ -179,23 +179,23 @@ review_id,review_text,sentimento,tema,nota
 43343,"Voçes tem que me devolver meu dinheiro corrigido pois não entregam o produto, ainda cabe indenização por danos morais e materias",negativo,entrega,hesitei com a
 120188,"Valeo mutio a longa espera, ele é bom!!!!.....................",positivo,qualidade_produto,hesitei com e e 0
 12724,adoro essência aqua. pedi o de 75ml mas veio o de 125ml.,neutro,anuncio_divergente,hesitei com + e -: veio tamanho maior que o pedido
-123100,"Escolhi está barraca e me mandaram uma similar disponível tb no site, mais barato! Não me enviaram o produto correto!",,,
-61978,"Precisa de muita pressão p funcionar , sai pouca agua",,,
-102140,Muito bom a câmera.se adaptadou perfeitamente ao meu carro e ao rádio. Além disso foi de fácil instalação.,,,
-74446,Produto simples e fácil de usar . O visor é de fácil leitura.,,,
-107648,Muito boa! Recomendo! Ela só demora para carregar mas fora isso é muito boa!,,,
-70579,"O produto é realmente o que eu esperava, porém a instalação não correspondeu a tubulação ficou uma verdadeira porcaria, não sei se é porque moro na Zona Oeste, pois tenho amigos na Zona Sul e as instalações efetuadas lá ficam um brinco, fiquei muito triste, pois não entendo, quando uma pessoa foi a minha casa e viu, disse logo quem fez essa porcaria na sua casa?",,,
-2723,"Tenho um cachorro que solta muito pelo, o aparelho ajuda a eliminar os pelos mortos reduzindo a queda",,,
-99530,"Gostei muito do produto, entrega rapida. Mas a descrição acima diz 9000 Games e constatamos menos de 3mil, espero uma explicação das lojas americanas. Pois ate o momento o produto esta sendo bom, mas esperamos explicação , pois compramos pela quantidade de jogos informado.",,,
-44074,"RECEBI A COMPRA, FUNCIONOU UM DIA. NO OUTRO DIA ESTAVA LIGANDO E DESLIGANDO SOZINHA. NO TERCEIRO DIA NÃO LIGOU MAIS. RECOLHERAM O PRODUTO MAS TEM QUASE 10 DIA NA RECEBI A OUTRA",,,
-14435,"Não é um material muito resistente, mas vale o custo benefício.",,,
-116215,"Em termo do produto otimo,mais a loja deixou a desejar,fiz o pedido do patins na cor rosa e verde me mandaram outra cor,acho q a loja deveria ter mais bom senso com as pessoas,se nao tiver a cor disponivel nao manda pois so vai pedendo pontos com as pessoas,ja pedeu uma eu nao compro mais nessa loja OLIST",,,
-84445,"Tudo que eu esperava, pois dá pra servir ao mesmo tempo 12 pessoas.",,,
-100013,"Ainda não recebi o produto, já está atrasado ha uma semana.",,,
-59346,"muito bom a loja, é mais uma peça para a coleção Recomendo",,,
-81796,Este produto não deu na minha filha queria trocar ficou grande tem que ser tamanho p tem como vcs trocar pra mim por favor,,,
-62234,"O produto em si é muito bom, conhecia ele de amigos. Comprei das americanas mas entregue pela MHS shop, veio com defeito na camera e as imagens são horríveis devido um embaçamento da mesma assim que levanta voo. Estou tentando resolver isso com a garantia, mas com a falta de comunicação está sendo muito ruim, tanto das americanas que agora não se responsabiliza e da MHS que demora responder. Estou com receio de ter jogado muito dinheiro fora já que se trata de um produto de alto custo.",,,
-6117,"Eu não recebi o produto , vocês não acompanham mais o rastreamento do correio por favor visite o site do correio e se informem , eu não recebi o produto",,,
-101239,"A loja mundo das variedades cumprem com o que prometem. Pode até passar da data de entrega como aconteceu comigo mas o produto chega até seu destino bem protegido, sem nenhum arranhão, e com todos os conteúdos que tem na descrição do produto no site. Valeu a pena comprar dessa loja.",,,
-47064,"Ate o presente momento muito bom, excelente produto.",,,
-4712,"O aparelho é bom, mas os produtos que o acompanham são fracos , Por exemplo Fone e Carregador. OBS: a câmera não é das melhores, mas se comparado ao preço do produto vale a pena.",,,
+123100,"Escolhi está barraca e me mandaram uma similar disponível tb no site, mais barato! Não me enviaram o produto correto!",negativo,anuncio_divergente,
+61978,"Precisa de muita pressão p funcionar , sai pouca agua",negativo,qualidade_produto,
+102140,Muito bom a câmera.se adaptadou perfeitamente ao meu carro e ao rádio. Além disso foi de fácil instalação.,positivo,qualidade_produto,
+74446,Produto simples e fácil de usar . O visor é de fácil leitura.,positivo,qualidade_produto,
+107648,Muito boa! Recomendo! Ela só demora para carregar mas fora isso é muito boa!,positivo,qualidade_produto,hesitei com 0
+70579,"O produto é realmente o que eu esperava, porém a instalação não correspondeu a tubulação ficou uma verdadeira porcaria, não sei se é porque moro na Zona Oeste, pois tenho amigos na Zona Sul e as instalações efetuadas lá ficam um brinco, fiquei muito triste, pois não entendo, quando uma pessoa foi a minha casa e viu, disse logo quem fez essa porcaria na sua casa?",negativo,outro,hesitei com a e q: reclama da instalacao
+2723,"Tenho um cachorro que solta muito pelo, o aparelho ajuda a eliminar os pelos mortos reduzindo a queda",positivo,qualidade_produto,
+99530,"Gostei muito do produto, entrega rapida. Mas a descrição acima diz 9000 Games e constatamos menos de 3mil, espero uma explicação das lojas americanas. Pois ate o momento o produto esta sendo bom, mas esperamos explicação , pois compramos pela quantidade de jogos informado.",negativo,anuncio_divergente,"hesitei com 0: gostou, mas anuncio exagerou nos jogos"
+44074,"RECEBI A COMPRA, FUNCIONOU UM DIA. NO OUTRO DIA ESTAVA LIGANDO E DESLIGANDO SOZINHA. NO TERCEIRO DIA NÃO LIGOU MAIS. RECOLHERAM O PRODUTO MAS TEM QUASE 10 DIA NA RECEBI A OUTRA",negativo,qualidade_produto,hesitei com e e a
+14435,"Não é um material muito resistente, mas vale o custo benefício.",positivo,preco,hesitei com 0 e q
+116215,"Em termo do produto otimo,mais a loja deixou a desejar,fiz o pedido do patins na cor rosa e verde me mandaram outra cor,acho q a loja deveria ter mais bom senso com as pessoas,se nao tiver a cor disponivel nao manda pois so vai pedendo pontos com as pessoas,ja pedeu uma eu nao compro mais nessa loja OLIST",negativo,anuncio_divergente,"hesitei com a e 0: produto otimo, loja mandou outra cor"
+84445,"Tudo que eu esperava, pois dá pra servir ao mesmo tempo 12 pessoas.",positivo,qualidade_produto,
+100013,"Ainda não recebi o produto, já está atrasado ha uma semana.",negativo,entrega,
+59346,"muito bom a loja, é mais uma peça para a coleção Recomendo",positivo,qualidade_produto,hesitei com a e o
+81796,Este produto não deu na minha filha queria trocar ficou grande tem que ser tamanho p tem como vcs trocar pra mim por favor,neutro,outro,hesitei com - e q: pede troca de tamanho
+62234,"O produto em si é muito bom, conhecia ele de amigos. Comprei das americanas mas entregue pela MHS shop, veio com defeito na camera e as imagens são horríveis devido um embaçamento da mesma assim que levanta voo. Estou tentando resolver isso com a garantia, mas com a falta de comunicação está sendo muito ruim, tanto das americanas que agora não se responsabiliza e da MHS que demora responder. Estou com receio de ter jogado muito dinheiro fora já que se trata de um produto de alto custo.",negativo,qualidade_produto,hesitei com a: defeito e falta de comunicacao
+6117,"Eu não recebi o produto , vocês não acompanham mais o rastreamento do correio por favor visite o site do correio e se informem , eu não recebi o produto",negativo,entrega,
+101239,"A loja mundo das variedades cumprem com o que prometem. Pode até passar da data de entrega como aconteceu comigo mas o produto chega até seu destino bem protegido, sem nenhum arranhão, e com todos os conteúdos que tem na descrição do produto no site. Valeu a pena comprar dessa loja.",positivo,atendimento,hesitei com e: loja cumpre o prometido
+47064,"Ate o presente momento muito bom, excelente produto.",positivo,qualidade_produto,
+4712,"O aparelho é bom, mas os produtos que o acompanham são fracos , Por exemplo Fone e Carregador. OBS: a câmera não é das melhores, mas se comparado ao preço do produto vale a pena.",positivo,qualidade_produto,hesitei com 0 e p
