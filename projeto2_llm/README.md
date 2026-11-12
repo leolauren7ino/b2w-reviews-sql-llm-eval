@@ -139,11 +139,24 @@ Leitura, com o que os dados sustentam:
   os dois empatam, mas com 7 itens isso não permite conclusão.
 - Parte da diferença é de critério, não de capacidade: o baseline aprendeu com estrelas e o gabarito é uma leitura do texto
   feita por Claude. Um LLM tende a concordar mais com outro LLM do que com uma nota. Não sei quanto da diferença é isso.
-- Não investiguei *por que* o baseline erra os 10 negativos (suspeita, não verificada: avaliações com nota alta e texto crítico,
-  ou texto misto). É a análise de erros que falta.
+- Os 10 erros em `negativo` foram lidos (abaixo): 6 são falha real do modelo e 4 são discordância entre nota e texto.
 - Se o objetivo é separar positivo de negativo a custo zero e com latência de milissegundos, o baseline já chega a 0,84
   e roda sem API nem limite de requisições. O LLM compensa quando o erro em `negativo` é caro (reclamações que passam
   despercebidas), com o custo de depender de uma API e de variar um pouco entre execuções.
+
+#### Os 10 negativos que o baseline errou (leitura feita por Claude, a conferir pelo autor)
+
+| Grupo | Itens | O que acontece |
+|---|---|---|
+| Nota concorda com o gabarito (1 a 2 estrelas), baseline erra | 6 | Limite do bag-of-words: ironia e gíria sem palavra de sentimento ("isso tudo isso compra um calular..."), elogio negado pelo contexto ("Não depila... modelo anterior ótimo"), texto longo e polido com queixa no meio (notebook que trava), crítica em tom brando prevista como neutra (2 itens), elogio inicial seguido de dor ("A bota é linda, mas... dói muito") |
+| Nota (3 a 4 estrelas) discorda do gabarito | 4 | Textos mistos, como "produto ótimo, porém a loja deixou a desejar". O baseline foi treinado para dizer neutro/positivo nesses casos e fez isso; a divergência é de critério |
+
+Dois pontos de cautela. Primeiro, se os 4 itens de critério fossem contados como acerto do baseline, a acurácia iria de 0,84 para 0,88:
+o LLM continuaria à frente, mas por uma margem menor. É um exercício de sensibilidade, não uma correção do teste (os rótulos do teste
+não foram alterados). Segundo, pelo menos um desses 4 (3 estrelas: "Gostei muito do produto, entrega rápida... o produto está sendo bom")
+parece mais positivo que negativo, e o gabarito o marca como negativo: é candidato a rótulo discutível. Como o Gemini
+acertou quase todos os negativos do gabarito, incluindo esses textos mistos, isso é compatível com a limitação já citada:
+dois LLMs tendem a concordar entre si em casos ambíguos. Uma releitura humana desses 4 itens (sem alterar o teste) é o próximo passo barato.
 
 ## Limitações
 - 200 exemplos: com 100 no teste, cada ponto percentual de acurácia é 1 item; diferenças de poucos pontos são ruído.
