@@ -17,43 +17,66 @@
 17 -d hesitei com q: faltou instrucao e esta em ingles
 18 +q
 19 -e hesitei com a: produto bom, mas reclama da loja e da falta de posicao do pedido
-20 -e21 +e hesitei com q: elogia o pipoqueiro e a entrega adiantada
+20 -e
+21 +e hesitei com q
 22 -q
 23 +q
-24 +q texto humoristico/ironico, recomenda o motor; hesitei com 0
-25 0q hesitei com d: parece boa, manual em ingles, sem conclusao
+24 +q humor; hesitei com 0
+25 0q hesitei com d
 26 -q
-27 -q hesitei com p: gosta dos filmes, mas a qualidade do box nao vale o preco
-28 -q hesitei com d: esperava outra coisa pela marca, funcoes confusas
+27 -q hesitei com p
+28 -q hesitei com d
 29 +q
-30 +e hesitei com 0 e q: recomenda, unico problema citado e o prazo
-31 -e hesitei com a: pedido nao chega por briga entre fornecedora e loja
+30 +e hesitei com 0 e q
+31 -e hesitei com a
 32 -p
 33 -q
-34 -q hesitei com a: carregador nao funciona e ninguem retorna
+34 -q hesitei com a
 35 +q
-36 -e hesitei com 0: gosta da malha, mas a entrega de um mes domina o final
-37 +q hesitei com p: produto muito bom, comprou mais na oferta
+36 -e hesitei com 0
+37 +q hesitei com p
 38 +q
 39 +e
-40 -d hesitei com q: cores erradas e baixa qualidade
-41 -e hesitei com d: entrega demorada e nao e bivolt
-42 +q hesitei com e: elogia o aparelho e a entrega, ressalva so o som baixo
-43 -q hesitei com d: manchas e tamanho diferente do esperado
+40 -d hesitei com q
+
+41 -e hesitei com d
+42 +q hesitei com e
+43 -q hesitei com d
 44 -d
 45 +q
 46 +q
-47 -q hesitei com a: produto estragado, cita atendimento ruim
-48 -d hesitei com q: nao e como na foto, muito fino
-49 +q hesitei com e: igual a imagem, supera expectativa, entrega rapida
-50 -e hesitei com a: pedido sem nota fiscal apos semanas
-51 +p hesitei com 0 e q: gostou muito, mas acha o preco alto para 16 GB
+47 -q hesitei com a
+48 -d hesitei com q
+49 +q hesitei com e
+50 -e hesitei com a
+51 +p hesitei com 0 e q
 52 +q
-53 -q hesitei com d: fraco e sem pilha
+53 -q hesitei com d
 54 +q
-55 -a hesitei com 0: gostou, mas termina reclamando de garantia e falta de manutencao
-56 -q hesitei com e: peças folgadas e transportadora nao entregou na porta
-57 +q hesitei com p: igual a original e mais em conta
-58 +q hesitei: ambiguo, li como elogio (nao gera erro no painel)
+55 -a hesitei com 0
+56 -q hesitei com e
+57 +q hesitei com p
+58 +q ambiguo, li como elogio
 59 +q hesitei com e e p
-60 0q hesitei com +: cedo para avaliar, atendendo por enquanto
+60 0q hesitei com +
+
+61 +q
+62 +q
+63 0o vendedor se defendendo, nao avalia compra
+64 0q hesitei com - e a: defeito, mas reembolso imediato
+65 -q hesitei com d
+66 +q
+67 -e
+68 +q
+69 -e hesitei com q
+70 +q
+71 -q hesitei com d e 0
+72 +q
+73 +q hesitei com e
+74 -d hesitei com 0: falta tamanho no anuncio
+75 -d hesitei com a e q
+76 -a
+77 -e
+78 +q hesitei com e
+79 +q
+80 0q hesitei com +
