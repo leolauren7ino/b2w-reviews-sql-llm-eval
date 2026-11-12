@@ -7,9 +7,7 @@
 
 Dataset comum: B2W-Reviews01 (baixado de `huggingface.co/datasets/vladjr/B2W-Reviews01`, fora do git em `data/raw/`).
 
-**Estado:** Projeto 1 completo e executado. Projeto 2 com pipeline construído e testado (11 testes) e
-gabarito de 200 avaliações pronto (gerado com ajuda de um LLM; ver o README do projeto), mas
-**os resultados da avaliação ainda não foram publicados**; por isso não há métricas nele ainda.
+**Estado:** Projeto 1 e Projeto 2 completos e executados. No Projeto 2, o gabarito de 200 avaliações foi rotulado por Claude (não por humano) e o classificador (Gemini) foi avaliado em dev e teste com o prompt v1; números e limitações estão no README do projeto.
 
 ## Ambiente
 Python 3.12+ e Postgres 16. O jeito mais simples é Docker:

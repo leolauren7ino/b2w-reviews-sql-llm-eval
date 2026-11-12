@@ -115,7 +115,7 @@ sentimento e 0,00 em tema, sem sinal de ajuste ao dev, já que o prompt não foi
 pip install -r ../requirements.txt
 export ANTHROPIC_API_KEY=...            # e PGHOST/PGPORT/PGUSER/PGDATABASE se não for o padrão
 python prepare_sample.py                # já gerado: labeling/to_label.csv
-# rotule labeling/to_label.csv seguindo labeling/GUIA_DE_ROTULAGEM.md
+# o gabarito já está preenchido em labeling/to_label.csv (ver "Dados" sobre quem rotulou)
 python split.py
 python run_eval.py --prompt v1 --split dev --runs 3
 python report.py --prompt v1 --split dev
