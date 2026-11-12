@@ -139,26 +139,26 @@ review_id,review_text,sentimento,tema,nota
 71241,Eu e junto meu marido temos 190 kg. Ele é bem fraco e quebra a Madeira. Não pode ficar de pé.,negativo,qualidade_produto,
 79624,Demorou 4 meses pra. Na minha. Casa E o atendimento e pessimo.,negativo,entrega,hesitei com a
 52436,"É forte e o fio é longo, além de ser bonito esteticamente, estou gostando",positivo,qualidade_produto,
-26458,"Produto com boa performance, rapidez no uso de seus aplicativos, excelente custo benefício, beleza na cor azul turquesa e lindo design. Recomendo.",,,
-130534,"Amei o meu produto, e chegou bem antes do previsto!!!",,,
-41131,"Comprei ele para presentear minha esposa ela gostou muito, alem da entrega que foi muito rápida mesmo com o feriado do carnaval. Parabéns a loja voltarei a fazer negocio.",,,
-93494,Achei o produto bonito quando vir na foto quando chegou era deferente da foto mais td bem fez a devolução....,,,
-29455,"É um aparelho muito bonito, tem um sistema muito bom. Esperava um pouco mais da câmera. A questão do chip híbrido que pesa por ele ser de 16 gb. Mas indico a compra igual.",,,
-50347,"Qualidade inferior, panelas baixas e muito fina... péssima qualidade Eu não recomendo!",,,
-69236,comprei os produtos paguei e até hoje a data do dia 25 não foi recebido nenhum contrato foi contato atendimento péssimo para este produto.,,,
-112661,"A panela é boa mas, a pintura veio um pouco danificada.",,,
-105281,"Boa Tarde. Comprei 02 Troninho Infantil Musical para dar de presente. Quando fui entregar o primeiro, estava parecendo usado e não tive coragem de entregar e comprei outro presente. Conclusão, estou com os 02 aqui parado na caixa e quando liguei para realizar a troca falaram que não tinha mais o produto. Pronto... agora tem e será que a Lojas Americanas vão trocar eles??? agora tem, será que conseguiria? sei que vão dizer que já passou do prazo, mas quando quis trocar no prazo, não tinha. Aguardo um retorno. Obrigada. Juciane.",,,
-83478,"Entrega rápida e produto como eu esperava. Ainda não usei, mas demonstra estar perfeito.",,,
-52414,"Excelente custo beneficio ! Rápido, eficiente, não trava, tem diversos recursos que celulares mais caros não possuem. De longe o melhor intermediario que já vi!",,,
-127764,Produto excelente recomendo a quem quiser comprar custo e benefícios ótimos. Entregou antes do prazo. Estou muito feliz. Obrigada. Lojas Americanas. Continuarei comparando neste Site.,,,
-997,"TV show de bola! Tem aplicativos para entrada no YOUTUBE e TWITTER automáticos e muito bons. Só faltou mesmo o aplicativo para NETFLIX, que fez muita falta.",,,
-94568,"Achei o produto de baixa qualidade, as peças de encaixe são muito fracas.",,,
-90003,"Nao recebi o produto e me pediram avaliacao, piada né.",,,
-40990,"Comprei 3 kits e nenhum veio nas cores e quantidades descritas. Fora isso, o produto é equivalente aí preço, então, ok",,,
-49592,Celular excelente! Superou minhas expectativas! Super recomendo!,,,
-101262,"Recomendo, otimo custo benefício ..................................................",,,
-2717,"nao recebi ainda, faz um mes que fiz o pedido. Fui ao correio e nao estava la",,,
-114880,"Comprei este notebook para substituir um Asus cansado de prestar bons serviços (mas ainda funcionando, tanto que irá para minha filha). Embora ainda com poucos programas instalados por mim, o Samsung trava a todo instante. Desinstalei o antivírus McFee que veio instalado, temendo que houvesse conflito com o Defender. De nada adiantou. Suspeito que haja tantos programas inúteis para mim instalados que o desempenho seja muito baixo. Involuímos.",,,
+26458,"Produto com boa performance, rapidez no uso de seus aplicativos, excelente custo benefício, beleza na cor azul turquesa e lindo design. Recomendo.",positivo,qualidade_produto,hesitei com p
+130534,"Amei o meu produto, e chegou bem antes do previsto!!!",positivo,qualidade_produto,hesitei com e
+41131,"Comprei ele para presentear minha esposa ela gostou muito, alem da entrega que foi muito rápida mesmo com o feriado do carnaval. Parabéns a loja voltarei a fazer negocio.",positivo,entrega,hesitei com q e a
+93494,Achei o produto bonito quando vir na foto quando chegou era deferente da foto mais td bem fez a devolução....,negativo,anuncio_divergente,
+29455,"É um aparelho muito bonito, tem um sistema muito bom. Esperava um pouco mais da câmera. A questão do chip híbrido que pesa por ele ser de 16 gb. Mas indico a compra igual.",positivo,qualidade_produto,hesitei com 0
+50347,"Qualidade inferior, panelas baixas e muito fina... péssima qualidade Eu não recomendo!",negativo,qualidade_produto,
+69236,comprei os produtos paguei e até hoje a data do dia 25 não foi recebido nenhum contrato foi contato atendimento péssimo para este produto.,negativo,entrega,hesitei com a
+112661,"A panela é boa mas, a pintura veio um pouco danificada.",neutro,qualidade_produto,hesitei com +
+105281,"Boa Tarde. Comprei 02 Troninho Infantil Musical para dar de presente. Quando fui entregar o primeiro, estava parecendo usado e não tive coragem de entregar e comprei outro presente. Conclusão, estou com os 02 aqui parado na caixa e quando liguei para realizar a troca falaram que não tinha mais o produto. Pronto... agora tem e será que a Lojas Americanas vão trocar eles??? agora tem, será que conseguiria? sei que vão dizer que já passou do prazo, mas quando quis trocar no prazo, não tinha. Aguardo um retorno. Obrigada. Juciane.",negativo,atendimento,hesitei com q e d
+83478,"Entrega rápida e produto como eu esperava. Ainda não usei, mas demonstra estar perfeito.",positivo,entrega,hesitei com q
+52414,"Excelente custo beneficio ! Rápido, eficiente, não trava, tem diversos recursos que celulares mais caros não possuem. De longe o melhor intermediario que já vi!",positivo,qualidade_produto,hesitei com p
+127764,Produto excelente recomendo a quem quiser comprar custo e benefícios ótimos. Entregou antes do prazo. Estou muito feliz. Obrigada. Lojas Americanas. Continuarei comparando neste Site.,positivo,qualidade_produto,hesitei com p e e
+997,"TV show de bola! Tem aplicativos para entrada no YOUTUBE e TWITTER automáticos e muito bons. Só faltou mesmo o aplicativo para NETFLIX, que fez muita falta.",positivo,qualidade_produto,
+94568,"Achei o produto de baixa qualidade, as peças de encaixe são muito fracas.",negativo,qualidade_produto,
+90003,"Nao recebi o produto e me pediram avaliacao, piada né.",negativo,entrega,
+40990,"Comprei 3 kits e nenhum veio nas cores e quantidades descritas. Fora isso, o produto é equivalente aí preço, então, ok",negativo,anuncio_divergente,hesitei com 0
+49592,Celular excelente! Superou minhas expectativas! Super recomendo!,positivo,qualidade_produto,
+101262,"Recomendo, otimo custo benefício ..................................................",positivo,preco,hesitei com q
+2717,"nao recebi ainda, faz um mes que fiz o pedido. Fui ao correio e nao estava la",negativo,entrega,
+114880,"Comprei este notebook para substituir um Asus cansado de prestar bons serviços (mas ainda funcionando, tanto que irá para minha filha). Embora ainda com poucos programas instalados por mim, o Samsung trava a todo instante. Desinstalei o antivírus McFee que veio instalado, temendo que houvesse conflito com o Defender. De nada adiantou. Suspeito que haja tantos programas inúteis para mim instalados que o desempenho seja muito baixo. Involuímos.",negativo,qualidade_produto,
 54168,"O produto atende às expectativas, bom espaço para brincadeiras! Comprei em valor promocional com excelente custo benefício. A entrega foi realizada em prazo super rápido.",,,
 21315,"Produto muito bom, não faz muito barulho fácil manuseio.",,,
 9909,"Produto ótimo e de grande ajuda, recomendo sem dúvidas",,,

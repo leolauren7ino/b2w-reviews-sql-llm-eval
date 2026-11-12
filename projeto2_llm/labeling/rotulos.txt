@@ -140,3 +140,25 @@
 138 -q
 139 -e hesitei com a
 140 +q
+
+141 +q hesitei com p
+142 +q hesitei com e
+143 +e hesitei com q e a
+144 -d
+145 +q hesitei com 0
+146 -q
+147 -e hesitei com a
+148 0q hesitei com +
+149 -a hesitei com q e d
+150 +e hesitei com q
+
+151 +q hesitei com p
+152 +q hesitei com p e e
+153 +q
+154 -q
+155 -e
+156 -d hesitei com 0
+157 +q
+158 +p hesitei com q
+159 -e
+160 -q
