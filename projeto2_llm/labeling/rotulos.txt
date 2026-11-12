@@ -1,0 +1,20 @@
+1 +q
+2 -q
+3 -q
+4 +q
+5 +q
+6 +q
+7 -d hesitei com 0: diz que nao tem como opinar, mas veio produto errado
+8 +q camera elogiada, texto fragmentado
+9 +e hesitei com q: elogia jogo e entrega
+10 -d
+11 -q hesitei com d: esperava outra coisa
+12 +q hesitei com p: elogia custo-beneficio e o aparelho
+13 +q
+14 -d
+15 +q
+16 +q
+17 -d hesitei com q: faltou instrucao e esta em ingles
+18 +q
+19 -e hesitei com a: produto bom, mas reclama da loja e da falta de posicao do pedido
+20 -e

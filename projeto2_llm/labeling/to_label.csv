@@ -1,24 +1,24 @@
 review_id,review_text,sentimento,tema,nota
-123072,"Perfeito para meu propósito, não é forte mas iluumina.",,,
-5030,"Qdo é presente pra criança, não pode falhar! O jogo veio lacrado, mas pra nossa decepção, não ""rodou"" de jeito nenhum! Já entrei em contato, aguardando a retirada para avaliação e troca! Enqto isso, tenho que enrolar o dono do presente! Chato, né?",,,
-9229,"Não depila. Tinha um modelo anterior que era ótimo, mas estragou depois de muitos anos. Ao comprar este, desilusão total.",,,
-81279,"Bandeja muito resistente e bonita, espelho e decoração dos lados como no site. Adorei. Recomendo",,,
-65775,Produto muito bom pois com o visor transparente consigo ver todas as bolsas e escolher a que vou usar Recomendo,,,
-59505,"Atende bem minha necessidade.Nao trava, gostei e recomendo.",,,
-15157,"não tem como opinar, porque o produto não foi o que eu pedir.",,,
-43700,So a qualidade a camera eu ja amei e so o tanto de gb,,,
-60632,Muito bom o jogo a entrega foi excelente. E rápida,,,
-62056,"Não veio a marca da descrição do anuncio, então não recomendo se é anunciado uma marca teria que ser entregue o produto descrito e não outro produto.",,,
-7706,Não atingiu minha expectativa.esperava outra coisa,,,
-55857,"Excelente custo beneficio, o aparelho e ótimo, superou minhas expectativas",,,
-118361,"Adorei. Ainda mais, com a porta espelhada. Muito bonito.",,,
-54757,Recebi o produto hoje e não veio a mochila. Isso está errado. Gostaria de saber o que aconteceu?,,,
-22104,Ferro muito bom. Não vasa água de todos que já comprei foi melhor.,,,
-9555,Funciona bem. O sinal alcança muito mais area do que o meu antigo roteador de 300mbps,,,
-17188,"Olá ,recebi o produto , fiquei decepcionada com o mesmo, não vem a instrução. Nunca vi um produto que não é acompanhado da instrução ,não consegui nem colocar a hora , tudo é escrito em ingles.",,,
-64864,Em pouco tempo senti melhora...vamos aguardar até o final do tratamento.,,,
-96519,O produto e bom mas esta loja milenium store parceira da americanas e um lixo meu produto foi comprado a 4 dias atrás e ate hj nao tive posição de nada ...horrivel se comprei e pq preciso...,,,
-122006,"Comprei o smartphone no dia 01/05/2018. A previsão para entrega era até o dia 17/05/2018. Já passou um dia do último dia previsto para entrega e nada de receber o produto. Quem faz a entrega é a Directlog. Enviei e-mail a eles ainda no dia 14/05, pois comprei 2 celulares no site Americanas e um deles recebi no dia 14/05. Ambos foram postados no mesmo dia, apesar de serem vendidos por empresas diferentes. Não obtive resposta ao e-mail enviado à Directlog. Estou chateada, pois comprei este para dar de presente e o dia do aniversário já passou.",,,
+123072,"Perfeito para meu propósito, não é forte mas iluumina.",positivo,qualidade_produto,
+5030,"Qdo é presente pra criança, não pode falhar! O jogo veio lacrado, mas pra nossa decepção, não ""rodou"" de jeito nenhum! Já entrei em contato, aguardando a retirada para avaliação e troca! Enqto isso, tenho que enrolar o dono do presente! Chato, né?",negativo,qualidade_produto,
+9229,"Não depila. Tinha um modelo anterior que era ótimo, mas estragou depois de muitos anos. Ao comprar este, desilusão total.",negativo,qualidade_produto,
+81279,"Bandeja muito resistente e bonita, espelho e decoração dos lados como no site. Adorei. Recomendo",positivo,qualidade_produto,
+65775,Produto muito bom pois com o visor transparente consigo ver todas as bolsas e escolher a que vou usar Recomendo,positivo,qualidade_produto,
+59505,"Atende bem minha necessidade.Nao trava, gostei e recomendo.",positivo,qualidade_produto,
+15157,"não tem como opinar, porque o produto não foi o que eu pedir.",negativo,anuncio_divergente,"hesitei com 0: diz que nao tem como opinar, mas veio produto errado"
+43700,So a qualidade a camera eu ja amei e so o tanto de gb,positivo,qualidade_produto,"camera elogiada, texto fragmentado"
+60632,Muito bom o jogo a entrega foi excelente. E rápida,positivo,entrega,hesitei com q: elogia jogo e entrega
+62056,"Não veio a marca da descrição do anuncio, então não recomendo se é anunciado uma marca teria que ser entregue o produto descrito e não outro produto.",negativo,anuncio_divergente,
+7706,Não atingiu minha expectativa.esperava outra coisa,negativo,qualidade_produto,hesitei com d: esperava outra coisa
+55857,"Excelente custo beneficio, o aparelho e ótimo, superou minhas expectativas",positivo,qualidade_produto,hesitei com p: elogia custo-beneficio e o aparelho
+118361,"Adorei. Ainda mais, com a porta espelhada. Muito bonito.",positivo,qualidade_produto,
+54757,Recebi o produto hoje e não veio a mochila. Isso está errado. Gostaria de saber o que aconteceu?,negativo,anuncio_divergente,
+22104,Ferro muito bom. Não vasa água de todos que já comprei foi melhor.,positivo,qualidade_produto,
+9555,Funciona bem. O sinal alcança muito mais area do que o meu antigo roteador de 300mbps,positivo,qualidade_produto,
+17188,"Olá ,recebi o produto , fiquei decepcionada com o mesmo, não vem a instrução. Nunca vi um produto que não é acompanhado da instrução ,não consegui nem colocar a hora , tudo é escrito em ingles.",negativo,anuncio_divergente,hesitei com q: faltou instrucao e esta em ingles
+64864,Em pouco tempo senti melhora...vamos aguardar até o final do tratamento.,positivo,qualidade_produto,
+96519,O produto e bom mas esta loja milenium store parceira da americanas e um lixo meu produto foi comprado a 4 dias atrás e ate hj nao tive posição de nada ...horrivel se comprei e pq preciso...,negativo,entrega,"hesitei com a: produto bom, mas reclama da loja e da falta de posicao do pedido"
+122006,"Comprei o smartphone no dia 01/05/2018. A previsão para entrega era até o dia 17/05/2018. Já passou um dia do último dia previsto para entrega e nada de receber o produto. Quem faz a entrega é a Directlog. Enviei e-mail a eles ainda no dia 14/05, pois comprei 2 celulares no site Americanas e um deles recebi no dia 14/05. Ambos foram postados no mesmo dia, apesar de serem vendidos por empresas diferentes. Não obtive resposta ao e-mail enviado à Directlog. Estou chateada, pois comprei este para dar de presente e o dia do aniversário já passou.",negativo,entrega,
 71516,"Bom dia, Excelente o pipoqueiro, chegou mais cedo uns 3 dias muito rápido que perfeito. Valeu!",,,
 36006,"Não compra este produto, pois o mesmo veio com os botões travados e ao tentar ligar o mesmo nem ligou. Péssima qualidade.",,,
 46309,"Adorei esse kit, já estava de olho nele desde que vi minha sobrinha usando, agora quando eu for viajar esse kit vai junto na mala, pois ocupa pouco espaço, prático e lindo amei !",,,
